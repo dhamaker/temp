@@ -4,18 +4,15 @@ File: Test Page 2.html.html
 
 Date:  March 20, 2019
 
+As you mention, there are so many things wrong with the source file.  HTML, Accessibility, Broken Links, etc.   The page appears to be the output of a WYSIWYG editor circa 1998.  It needs recoding to Web Standards; not remediation.
+
 
 # Tests
 1. Content Review
 2. HTML Validation: https://validator.w3.org/
 3. WAVE Review
-3. Color Contrast Check 
 
 
-
-Terri,
-
-As you mention, there are so many things wrong with the source file.  HTML, Accessibility, Broken Links, etc.   The page appears to be the output of a WYSIWYG editor circa 1998.  It needs recoding to Web Standards; not remediation.
 
 # Content Issues
 1. Weak file naming: redundant extensions, spacing poor form  *.html.html.  File name is not compatible with all operating systems and mixed case increases input errors. Better:  test-page-2.html
@@ -45,7 +42,7 @@ WAVE flagged 10 error and 19 warnings.  But in my experience, if the HTML is inv
 
   1. Purpose of page content is unclear.  Content does not tell a story. Page has not answered the basic Who, What, and Why questions.
   * Main Form (the one with most inputs) is unclear not title or description of purpose. 
-  * Layout tables
+  * Layout tables are painful.
   * Missing a means to jump to main content.
   * Missing alt text on graphic content.
   * Form inputs have missing labels and broken references.
@@ -95,3 +92,7 @@ Follow HTML5 Coding Standards
   * Presentation style
     * line height >= 1.5
     * input and button font-sizes to 1em
+    * use media queries to manage mobile, tablet, and desktop differences.
+    * design padding for touch links in mobile/tablet targets.
+    * create system of link styles for header, footer, as well as normal body.
+    * and lots more
