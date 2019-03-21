@@ -4,14 +4,17 @@ File: Test Page 2.html.html
 
 Date:  March 20, 2019
 
-As you mention, there are so many things wrong with the source file.  HTML, Accessibility, Broken Links, etc.   The page appears to be the output of a WYSIWYG editor circa 1998.  It needs recoding to Web Standards; not remediation.
+As you mention, there are so many things wrong with the source file.  HTML, Accessibility, Broken Links, etc.   The page appears to be the output of a WYSIWYG editor circa 1998.  It is fundamentally broken and needs recoding to Web Standards; not remediation.
 
 
 # Tests
-1. Content Review
-2. HTML Validation: https://validator.w3.org/
-3. WAVE Review
 
+1. Manual Content Review
+2. Automated HTML Validation using W3C validator https://validator.w3.org/
+3. Automated Accessibility Review using WAVE
+4. Manual Accessibility Evaluation
+
+For automated testing, I use free, easily accessed, tools that can be used by prospective customers performing due diligence checks.
 
 
 # Content Issues
@@ -41,7 +44,7 @@ This HTML is classic 1998 WYSIWYG output.  Some highlights:
 __WAVE flagged 10 error and 19 warnings.__  But in my experience, if the HTML is invalid, then Accessibility review tools behave unpredictably.
 
   1. Purpose of page content is unclear.  Content does not tell a story. Page has not answered the basic Who, What, and Why questions.
-  * Main Form (the one with most inputs) is unclear not title or description of purpose. 
+  * Main Form (the one with most inputs) is unclear not title or description of purpose.
   * Layout tables are painful.
   * Missing a means to jump to main content.
   * Missing alt text on graphic content.
@@ -82,13 +85,13 @@ Follow HTML5 Coding Standards. [See HTML sample](test-page-2-better.html)
     * The five optional inputs should be removed.  This is the data minimization principal of Privacy by Design.  Plus fewer inputs will lead to increased conversions.  However, if not removed:
     * All `<option>` elements must have `value` attributes
     * language `<option>` labels should use full name, not the language code, possibly in the appropriate language.
-    * Assuming back-end needs separate month, day, year inputs, use a `<fieldset>` structure.
+    * Use `<fieldset>` structure for expiration date, assuming back-end needs separate `month`, `day`, `year` input.  Alternatively, if the back-end supports and use applied consistently across all date inputs, you may upgrade to an HTML5 `date` input type.
     * Submit button label should describe the user's need or objective.  Use `button` element for greater presentation control.
   * Page footer area
     * Should add a "Privacy" link in your footer.  You should have a clearly labeled, conspicuous link to a Privacy Policy on every landing page and pages collecting Personally Identifiable Information (PII)
     * Should clarify context for email and phone links.
     * May use `href='tel:'` link for phone number markup.
-  * `<span id='nuanria_plugin_outer'`> may need ARIA tagging or alternate content. Function and behavior of object is unclear.  Should research purpose and tagging options.  
+  * `<span id='nuanria_plugin_outer'`> includes an embedded content type needs ARIA role AND alternate content. Function and behavior of object is unclear.  Should research purpose and tagging options.  
 
   * Presentation style
     * line height >= 1.5
