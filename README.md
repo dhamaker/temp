@@ -38,7 +38,7 @@ This HTML is classic 1998 WYSIWYG output.  Some highlights:
   * broken form `<form name=search' and 6 orphaned`<input hidden` elements
 
 ## Accessibility Issues
-WAVE flagged 10 error and 19 warnings.  But in my experience, if the HTML is invalid, then Accessibility review tools behave unpredictably.
+__WAVE flagged 10 error and 19 warnings.__  But in my experience, if the HTML is invalid, then Accessibility review tools behave unpredictably.
 
   1. Purpose of page content is unclear.  Content does not tell a story. Page has not answered the basic Who, What, and Why questions.
   * Main Form (the one with most inputs) is unclear not title or description of purpose. 
@@ -52,7 +52,8 @@ WAVE flagged 10 error and 19 warnings.  But in my experience, if the HTML is inv
 
 
 ## Remediation Advice
-Follow HTML5 Coding Standards
+Follow HTML5 Coding Standards. [See HTML sample](test-page-2-better.html)
+
   * Research the purpose of the page.  What do we want the user to do?  What is the primary use case.  Then, re-write the copy to communicate the message, including
     * Page or form title: the `h1`
     * Optional additional context.
