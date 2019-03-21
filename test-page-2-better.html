@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample SSB BART Group Homepage - with Section 508 and WCAG Violations</title>
+	<style media="screen">
+		body {
+			background-color:#fff;
+			line-height:1.5;
+			margin:1em;
+		}
+
+		header > a {
+			display:block;
+			margin-right:.5em;
+			padding:.5em .5em .5em 0;
+		}
+		footer {margin:2em 0}
+		footer > a {
+			color:#000;
+			display:inline-block;
+			margin-right:.25em;
+			padding:.5em .5em .5em 0;
+		}
+		main {margin:3em 0}
+		form {
+			margin:1em 0;
+		}
+
+		input, button {font-size:1em;font-family:serif}
+		button {cursor:pointer}
+		nav ul {
+			list-style:none;
+			padding:0;
+		}
+		input[type="email"] {width:20em}
+		.siteID {display:block;font-size:2em;}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#main">Skip to Main Content</a>
+		<img src="ssb_bart_logo01.gif" alt="SSB Bart Group" class="siteID">
+		<a href="https://www.ssbbartgroup.com/services.php">Products and Services</a>
+		<a href="https://www.ssbbartgroup.com/contact.php">Contact SSB BART Group</a>
+		<form name="search" action="/cgi-bin/htsearch" method="get">
+			<!--  COMMENT - the purpose of these elements is unclear.
+			<input type="hidden" value="and" name="method">
+			<input type="hidden" value="builtin-long" name="format">
+			<input type="hidden" value="score" name="sort">
+			<input type="hidden" value="htdig" name="config">
+			<input type="hidden" name="restrict">
+			<input type="hidden" name="exclude">
+			-->
+			<input type="search" name="keyword" title="Keyword" placeholder="keyword" required title="What would you like to search for?" x-moz-errormessage="What would you like to search for?">
+			<button type="submit">Search</button>
+			</form>
+	</header>
+	<main id="main">
+		<form method="post" action="page_two.php" id="page_form">
+			<h1>[Purpose of form goes here]</h1>
+			<p>[Optionally clarify what user should expect.]</p>
+				<input type="hidden" name="seat_id" value="46">
+				 <p>
+					 <label for="firstname">First Name</label>
+					 <input required type="text" id="firstname" name="firstname" maxlength="255" value="Tim" title="First name is requried">
+				 </p>
+				 <p>
+					 <label for="email">E-mail</label>
+					 <input required type="email" id="email" name="email" maxlength="255" value="tim.springer@ssbbartgroup.com" placeholder="you@example.com">
+				 </p>
+				 <!--
+				 <p>
+					 <label for="lastname">Last Name</label>
+					 <input type="text" id="lastname" name="lastname"  maxlength="255" value="Springer">
+				 </p>
+				 <p>
+					 <label for="phone">Phone</label>
+					 <input type="tel" id="phone" name="phone" size="60" maxlength="255" value="415 624 2705" title="Required">
+				 </p>
+				 <p>
+					 <label for="a2134_ghjnc">Color Scheme</label>
+					 <select name="a2134_ghjnc" id="property_values">
+						 <option value="default" selected>Default</option>
+						 <option value="high contrast">High Contrast</option>
+						 <option value="blue steel">Blue Steel</option>
+						 <option value="magnum">Magnum</option>
+						 <option value="le tigre">Le Tigre</option>
+						 <option value="ferrari">Ferrari</option>
+						 <option value="storm">Storm</option>
+						 <option value="slate">Slate</option>
+					 </select>
+				 </p>
+				 <p>
+					 <label for="user_lang">User Language</label>
+					 <select id="user_lang" name="user_lang">
+							 <option value="en" selected>English</option>
+							 <option value="ko" lang="ko">한국어</option>
+						 </select>
+			  </p>
+				<fieldset>
+					<legend>Expiration Date</legend>
+					<label>
+						Month<select id="e_month" name="e_month">
+								<option value="1">January</option>
+								<option value="2">Febuary</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9" selected="">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+							</select>
+					</label>
+					<label>
+						Day <select name="e_day" id="e_day">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18" selected>18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+					</label>
+					<label>
+						Year
+						<select name="e_year" id="e_year">
+							<option value="2009">2009</option>
+							<option value="2010" selected>2010</option>
+							<option value="2011">2011</option>
+							<option value="2012">2012</option>
+						</select>
+				  </label>
+				</fieldset>
+			-->
+				<p class="primaryCTA">
+					<button type="submit" name="purposeUnclear">Continue</button>
+				</p>
+		</form>
+	</main>
+	<aside class="">
+		<h2>Try InSight and Infocus for Free</h2>
+		<p>Register for an evaluation copy of InSight and InFocus.</p>
+		<a href="https://www.ssbbartgroup.com/evaluation.php">Get an evaluation copy</a>
+	</aside>
+	<nav>
+		<h2>Sitemap</h2>
+		<ul>
+			<li><a accesskey="h" href="https://www.ssbbartgroup.com/index.php">Home</a></li>
+			<li><a accesskey="b" href="https://www.ssbbartgroup.com/about.php">About SSB BART Group</a></li>
+			<li><a accesskey="s" href="https://www.ssbbartgroup.com/section508.php">Section 508</a></li>
+			<li><a accesskey="t" href="https://www.ssbbartgroup.com/solutions.php">Solutions</a></li>
+			<li><a accesskey="p" href="https://www.ssbbartgroup.com/services.php">Products and Services</a></li>
+			<li><a accesskey="a" href="https://www.ssbbartgroup.com/accessibility.php">Accessibility</a></li>
+			<li><a accesskey="r" href="https://www.ssbbartgroup.com/partners.php">Partners</a></li>
+			<li><a accesskey="m" href="https://www.ssbbartgroup.com/customers.php">Customers</a></li>
+			<li><a accesskey="n" href="https://www.ssbbartgroup.com/press_room.php">Press Room</a></li>
+			<li><a accesskey="j" href="https://www.ssbbartgroup.com/jobs.php">Jobs at SSB BART Group</a></li>
+			<li><a accesskey="c" href="https://www.ssbbartgroup.com/contact.php">Contact SSB BART Group</a></li>
+		</ul>
+	</nav>
+	<footer>
+		<a href="https://www.ssbbartgroup.com/legal_disclaimer.php">Copyright &copy; 2001 SSB BART Group</a>
+		<a href="privacy.html">Privacy Policy</a>
+		<p>Email us at <a href="mailto:contact@ssbbartgroup.com">contact@ssbbartgroup.com</a> or
+ 		call us at <a href="tel:1-415-975-8000">415.975.8000</a></p>
+	</footer>
+</body>
+</html>
