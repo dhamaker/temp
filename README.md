@@ -4,11 +4,13 @@ File: Test Page 2.html.html
 
 Date:  March 20, 2019
 
-From: Terri Fellers
 
 # Tests
 1. Content Review
 2. HTML Validation: https://validator.w3.org/
+3. WAVE Review
+3. Color Contrast Check 
+
 
 
 Terri,
@@ -39,6 +41,8 @@ This HTML is classic 1998 WYSIWYG output.  Some highlights:
   * broken form `<form name=search' and 6 orphaned`<input hidden` elements
 
 ## Accessibility Issues
+WAVE flagged 10 error and 19 warnings.  But in my experience, if the HTML is invalid, then Accessibility review tools behave unpredictably.
+
   1. Purpose of page content is unclear.  Content does not tell a story. Page has not answered the basic Who, What, and Why questions.
   * Main Form (the one with most inputs) is unclear not title or description of purpose. 
   * Layout tables
