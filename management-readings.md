@@ -1,4 +1,5 @@
 #Readings
+
 -[x] ow To Assess A Job Candidate Who Doesn't Fit The Mold](https://hbr.org/2016/02/how-to-assess-a-job-candidate-who-doesnt-fit-the-mold)
 -[x] [How To Conduct An Effective Job Interview](https://hbr.org/2015/01/how-to-conduct-an-effective-job-interview)
 -[x] [10 Myths About One on One Meetings](https://getlighthouse.com/blog/one-on-one-meetings-myths/)
